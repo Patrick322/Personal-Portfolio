@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<header class="header">
+  <section id="home" class="home-section section text-center">
+    <div class="homepage">
+      <div class="container text-center text-white">
+        <div class="animated fadeInDown" style="animation-delay: 0.2s;">
+          <img class="profile-image img-thumbnail" src="{% static 'images/profile.jpg' %}" alt="oduol's profile image"
+            width="200px" style="border-radius: 50%;margin-top: 200px">
+          <h1 class="">Hello, I'm <span style="color: #e31b6d">Cynthia Oduol</span></h1>
+        </div>
+        <h4 class="animated fadeIn" style="animation-delay: 1.5s;font-weight: 400">I am a Full-Stack Web Developer</h4>
+        <div class="button animated fadeInUp" style="animation-delay: 2.5s">
+          <a href="#work" class="btn aqua-gradient view-my-work">View my work </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar navbar-fixed navbar-dark navbar-expand-md scrolling-navbar nav-fill w-100" id="work">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  justify-content-center">
+        <li><a class="scrollto " href="/">Home</a></li>
+        <li><a class="scrollto" href="#about">About Me</a></li>
+        <li><a class="scrollto" href="#projects">Projects</a></li>
+        <li><a class="scrollto" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<br><br>
+
+
+<div class="wrapper container-fluid">
+  <section id="about" class="about-section section text-center" style="padding-top: 80px">
+    <h2>ABOUT ME</h2>
+    <div class="title-underline bg-info"></div><br>
+    <div class="abt">
+      <div class="row scroll-animations">
+        <div class="item col-xs-12 col-sm-12 col-lg-4">
+          <div class="item-inner animated">
+            <img src="{% static 'images/solution.jpg' %}" alt="" class="commune" width="200px">
+            <h4 class="skill-name text-small">Problem Solving</h4>
+            <div class="desc">
+              I can take vague problems and requirements and break them down into steps and solutions.
+            </div>
+          </div>
+        </div>
+
+        <div class="item col-xs-12 col-sm-12 col-lg-4">
+          <div class="item-inner animated">
+            <img src="{% static 'images/communicate.jpg' %}" alt="" class="commune" width="200px">
+            <h4 class="skill-name">Communicating</h4>
+            <div class="desc">
+              I can explain things clearly, communicate problems quickly and write accurately and concisely.
+            </div>
+          </div>
+        </div>
+
+        <div class="item col-xs-12 col-sm-12 col-lg-4">
+          <div class="item-inner animated">
+            <img src="{% static 'images/organise.jpg' %}" alt="" class="commune" width="190px">
+            <h4 class="skill-name">Organising</h4>
+            <div class="desc">
+              I can self-manage, work to deadlines, organise projects and present well-structured and complete
+              deliverables.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-lg-4">
+          <img src="{% static 'images/doryn.jpg' %}" alt="" style="height: 200px;border-radius: 40px;">
+          <p>Recently graduated from <span><a href="https://moringaschool.com" target="_blank" class="text-info">Moringa
+                School</a></span> as a full-stack developer. Lover of innovation and everything related to generate new
+            knowledge, and not only that, but share it with the community. Face problems with a smile and solve them as
+            soon as possible. Excellent interpersonal relationships.</p>
+
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-4">
+          <h3><strong>Skills</strong></h3>
+          <p><span>Programming Languages:</span> HTML, CSS, Javascript, SQL, Python</p>
+          <p><span>Frameworks:</span> Flask, Django, Angular CLI, ReactJS, Jquery </p>
+          <p><span>Tools and Technologies:</span> Git, Github, Rest APIs</p>
+          <p> </p>
+
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+</div>
+<br><br><br>
+
+
+<div class="wrapper container-fluid" style="background-color: whitesmoke">
+  <section id="projects" class="portfolio-section section text-center" style="padding-top: 80px">
+    <br>
+    <h2>PROJECTS</h2>
+    <div class="title-underline bg-info"></div><br>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4">
+        <div class="view overla imghvr-push-down">
+          <img class="card-img-top" src="{% static 'images/project2.png' %}" alt="Card image cap" style="height: 300px">
+          <figcaption>
+            <h3>EPICURIOUS</h3><br><br>
+            <button class="btn btn-small btn-outline-white">View Project</button>
+
+          </figcaption>
+          <a href="https://epicuriousrecipe.herokuapp.com/" target="_blank"></a>
+        </div>
+      </div><br>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="view overlay imghvr-push-down">
+          <img class="card-img-top" src="{% static 'images/project1.png' %}" alt="Card image cap" style="height: 300px">
+          <figcaption>
+            <h3>G-HOOD</h3><br><br>
+            <button class="btn btn-small btn-outline-white">View Project</button>
+
+          </figcaption>
+          <a href="https://cynthiaghood.herokuapp.com/" target="_blank"></a>
+        </div>
+      </div><br>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="view overlay imghvr-push-down">
+          <img class="card-img-top" src="{% static 'images/project3.png' %}" alt="Card image cap" style="height: 300px">
+          <figcaption>
+            <h3>NEWS-HIGHLIGHT</h3><br><br>
+            <button class="btn btn-small btn-outline-white">View Project</button>
+
+          </figcaption>
+          <a href="https://news-highlight18.herokuapp.com/" target="_blank"></a>
+        </div>
+      </div><br>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="view overlay imghvr-push-down">
+          <img class="card-img-top" src="{% static 'images/project4.png' %}" alt="Card image cap" style="height: 300px">
+          <figcaption>
+            <h3>GALLERY</h3><br><br>
+            <button class="btn btn-small btn-outline-white">View Project</button>
+
+          </figcaption>
+          <a href="https://cynthiagallery.herokuapp.com/" target="_blank"></a>
+        </div>
+      </div><br>
+    </div>
+
+  </section>
+  <br><br>
+</div>
+<br><br>
+
+
+<section id="contact" class="contact-section section" style="padding-top: 80px;">
+
+  <form action="mailto:cynthiaobu940@gmail.com" class="form text-center">
+    <h2>CONTACT</h2>
+    <div class="title-underline bg-info"></div><br>
+    <h6><strong> Im available for work, get in touch </strong></h6><br>
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+    <div class="form-group">
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+        placeholder="Your Message"></textarea>
+    </div>
+    <button class="btn btn-outline-info btn-small" type="submit">Send</button><br><br>
+  </form>
+</section>
+
+
+<footer class="footer text-center" style="padding-top: 30px">
+  <div class="container-fluid foot"><br>
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://github.com" class="btn-floating btn-small btn-git">
+          <i class="fab fa-github fa-2x ml-4"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://linkedin.com/in/cynthia-oduol-24852619a/" class="btn-floating btn-small btn-fb">
+          <i class="fab fa-linkedin fa-2x ml-4"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://dev.to/cynthiaoduol" class="btn-floating btn-small btn-ins">
+          <i class="fab fa-dev fa-2x ml-4"></i>
+        </a>
+      </li>
+      </li>
+    </ul>
+    <small>Cynthia Oduol <span class="text-info">©2020</span></small><br><br>
+  </div>
+  <button id="back-top" class="aqua-gradient text-white"><i class="fas fa-angle-double-up fa-3x"></i></button>
+</footer>
+
+
+{% endblock %}

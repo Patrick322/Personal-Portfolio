@@ -1,0 +1,96 @@
+.homepage {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/static/images/download.png) center/ cover no-repeat fixed;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+span{
+  font-weight: 500 !important;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+}
+
+.title-underline {
+  width: 200px;
+  height: 8px;
+  margin: 0 auto;
+}
+
+.skill-name {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  background: #1b242f;
+  align-items: center;
+  /* border-bottom: 3px solid #04C2C9;  */
+}
+
+.scrollto {
+  padding: 0 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.scrollto.active,
+.scrollto:hover {
+  color: #e31b6d;
+}
+
+.scrollto:hover {
+  cursor: pointer;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
+}
+
+header nav.fixed {
+  width: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.form {
+  margin: 0 auto;
+  width: 500px;
+  float: none;
+  display: block;
+}
+
+.foot {
+  background-color: whitesmoke;
+}
+
+#back-top {
+  position: fixed;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  display: none;
+}
+
+figcaption > h3 {
+  padding-top: 40px;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 30px;
+}
